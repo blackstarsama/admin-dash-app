@@ -1,0 +1,75 @@
+.right_top {
+    margin-top: 1.4rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .right_top button#menu-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: none; /* si tu veux l'afficher en mobile, mets display: block en media query */
+  }
+  
+  .right_top .theme-toggler {
+    background: var(--color-light, #f1f1f1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.6rem;
+    width: 4.2rem;
+    cursor: pointer;
+    border-radius: var(--border-radius-1);
+    padding: 0.2rem;
+  }
+  
+  .right_top .theme-toggler span {
+    font-size: 1.2rem;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+  }
+  
+  .right_top .theme-toggler span.active {
+    background: var(--color-primary, #c084fc);
+    color: #fff;
+    border-radius: 0.4rem;
+  }
+  
+  .right_top .profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .right_top .profile .info {
+    text-align: right;
+  }
+  
+  .right_top .profile .info p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .right_top .profile .info p b {
+    color: #111;
+  }
+  
+  .right_top .profile .info small {
+    color: #888;
+    font-size: 0.75rem;
+  }
+  
+  .right_top .profile .profile-photo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
