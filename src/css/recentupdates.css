@@ -1,0 +1,147 @@
+/* RecentUpdates.css */
+
+.recent-updates {
+    margin-top: 1rem;
+    width: 100%;
+  }
+  
+  .recent-updates h2 {
+    margin-bottom: 0.8rem;
+    color: var(--color-dark);
+    font-size: 1.4rem;
+  }
+  
+  .recent-updates .updates {
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+  }
+  
+  .recent-updates .updates:hover {
+    box-shadow: none;
+  }
+  
+  .recent-updates .update {
+    display: grid;
+    grid-template-columns: 2.6rem auto;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
+  }
+  
+  .recent-updates .update:last-child {
+    margin-bottom: 0;
+  }
+  
+  .recent-updates .profile-photo {
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .recent-updates .profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .recent-updates .message p {
+    margin-bottom: 0.2rem;
+    color: var(--color-dark-variant);
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  
+  .recent-updates .message p b {
+    color: var(--color-dark);
+  }
+  
+  .recent-updates .message small {
+    color: var(--color-info-dark);
+    font-size: 0.75rem;
+  }
+  
+  /* Media Queries pour le responsive */
+  
+  /* Pour les tablettes (768px et moins) */
+  @media screen and (max-width: 768px) {
+    .recent-updates {
+      margin-top: 0.5rem;
+    }
+  
+    .recent-updates h2 {
+      font-size: 1.2rem;
+    }
+  
+    .recent-updates .updates {
+      padding: 1rem;
+    }
+  
+    .recent-updates .update {
+      grid-template-columns: 2.2rem auto;
+      gap: 0.8rem;
+      margin-bottom: 0.8rem;
+    }
+  
+    .recent-updates .profile-photo {
+      width: 2.2rem;
+      height: 2.2rem;
+    }
+  }
+  
+  /* Pour les mobiles (480px et moins) */
+  @media screen and (max-width: 480px) {
+    .recent-updates {
+      margin-top: 0;
+      padding: 0.5rem;
+    }
+  
+    .recent-updates h2 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+  
+    .recent-updates .updates {
+      padding: 0.8rem;
+      border-radius: var(--border-radius-2);
+    }
+  
+    .recent-updates .update {
+      grid-template-columns: 2rem auto;
+      gap: 0.6rem;
+      margin-bottom: 0.6rem;
+    }
+  
+    .recent-updates .profile-photo {
+      width: 2rem;
+      height: 2rem;
+    }
+  
+    .recent-updates .message p {
+      font-size: 0.8rem;
+    }
+  
+    .recent-updates .message small {
+      font-size: 0.7rem;
+    }
+  }
+  
+  /* Pour les très petits écrans (360px et moins) */
+  @media screen and (max-width: 360px) {
+    .recent-updates .update {
+      grid-template-columns: 1.8rem auto;
+      gap: 0.5rem;
+    }
+  
+    .recent-updates .profile-photo {
+      width: 1.8rem;
+      height: 1.8rem;
+    }
+  
+    .recent-updates .message p {
+      font-size: 0.75rem;
+    }
+  }

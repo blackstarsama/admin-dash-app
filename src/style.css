@@ -1,0 +1,141 @@
+.container {
+    display: flex;
+    height: 96%;
+    margin: 0 auto;
+    gap: 1.8rem;
+    grid-template-columns: 14rem auto 23rem;
+}
+
+aside {
+    width: 250px;
+    background: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+
+main {
+    flex: 1;
+    padding: 20px;
+    background: #ecf0f1;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.insights {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.insights .sales,
+.insights .expenses,
+.insights .income {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1;
+    margin-right: 20px;
+    position: relative;
+}
+
+.insights .sales:last-child,
+.insights .expenses:last-child,
+.insights .income:last-child {
+    margin-right: 0;
+}
+
+.progress {
+    position: relative;
+    margin-top: 10px;
+}
+
+.progress svg {
+    width: 76px;
+    height: 76px;
+}
+
+.progress circle {
+    fill: none;
+    stroke: #3498db;
+    stroke-width: 4;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 25; /* Adjust this value for progress */
+}
+
+.recent-orders {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.recent-orders table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.recent-orders th,
+.recent-orders td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile-photo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.sales-analytics {
+    margin-top: 20px;
+}
+
+.sales-analytics .item {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.sales-analytics .item .icon {
+    margin-right: 20px;
+}
+
+.theme-toggler {
+    display: flex;
+    align-items: center;
+}
+
+.theme-toggler .material-icons-sharp {
+    cursor: pointer;
+    margin-left: 10px;
+}
