@@ -1,5 +1,8 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import ShoppingCartSharpIcon from "@mui/icons-material/ShoppingCartSharp";
+import LocalMallSharpIcon from "@mui/icons-material/LocalMallSharp";
+import PersonSharpIcon from "@mui/icons-material/PersonSharp";
 
 const SalesAnalytics = () => {
   const onlineOrders = useSelector(
@@ -17,7 +20,7 @@ const SalesAnalytics = () => {
       <h2>Sales Analytics</h2>
       <div className="item online">
         <div className="icon">
-          <span className="material-icons-sharp">shopping_cart</span>
+          <ShoppingCartSharpIcon />
         </div>
         <div className="right">
           <div className="info">
@@ -30,7 +33,7 @@ const SalesAnalytics = () => {
       </div>
       <div className="item offline">
         <div className="icon">
-          <span className="material-icons-sharp">local_mall</span>
+          <LocalMallSharpIcon />
         </div>
         <div className="right">
           <div className="info">
@@ -43,7 +46,7 @@ const SalesAnalytics = () => {
       </div>
       <div className="item customers">
         <div className="icon">
-          <span className="material-icons-sharp">person</span>
+          <PersonSharpIcon />
         </div>
         <div className="right">
           <div className="info">

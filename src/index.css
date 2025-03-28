@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
-@import './css/app.css';
 /*------------------------- ROOT VARIABLES -------------------------*/
 :root {
   --color-primary: #ce5ff8;
@@ -30,12 +29,6 @@ body {
   margin: 0;
   font-family: 'Arial', sans-serif;
   background-color: #f4f4f4;
-}
-
-aside {
-  width: 250px;
-  background-color: #fff;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
 
