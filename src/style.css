@@ -113,22 +113,6 @@ h1 {
     border-radius: 50%;
 }
 
-.sales-analytics {
-    margin-top: 20px;
-}
-
-.sales-analytics .item {
-    background: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-}
-
-.sales-analytics .item .icon {
-    margin-right: 20px;
-}
 
 .theme-toggler {
     display: flex;

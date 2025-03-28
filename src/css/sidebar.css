@@ -55,7 +55,7 @@
 .sidebar a:last-child {
   position: absolute;
   bottom: 2rem;
-  width: 80%;
+  width: 100%;
 }
 
 .sidebar a.active {
