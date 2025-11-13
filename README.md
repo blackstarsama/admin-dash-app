@@ -49,3 +49,59 @@ Il intègre un **mode sombre**, des **graphiques interactifs**, et une **gestion
 git clone https://github.com/blackstarsama/admin-dash-app.git
 cd admin-dash-app
 ```
+
+### 2️⃣ Installer les dépendances
+
+```bash
+npm install
+```
+
+### 3️⃣ Lancer le projet
+
+```bash
+npm start
+```
+
+Le projet sera disponible sur :
+👉 http://localhost:3000
+
+
+#### 🧱 Structure du projet
+
+📁 src/
+ ┣ 📂 components/
+ ┃ ┣ 📜 Sidebar.jsx
+ ┃ ┣ 📜 Header.jsx
+ ┃ ┣ 📜 Insights.jsx
+ ┃ ┣ 📜 RecentOrders.jsx
+ ┃ ┗ 📜 SalesAnalytics.jsx
+ ┣ 📜 Orders.js
+ ┣ 📜 App.js
+ ┣ 📜 index.js
+ ┗ 📜 style.css
+
+### 🎨 Thèmes & Personnalisation
+
+Le thème est basé sur des variables CSS dynamiques.
+Tu peux modifier les couleurs globales dans le fichier :
+
+:root {
+  --color-primary: #7380ec;
+  --color-success: #41f1b6;
+  --color-warning: #ffbb55;
+  --color-dark: #363949;
+  --color-light: rgba(132, 139, 200, 0.18);
+}
+
+.dark-theme-variables {
+  --color-background: #181a1e;
+  --color-white: #202528;
+  --color-dark: #edeffd;
+}
+
+## 🪪 Licence
+
+Ce projet est sous licence MIT — tu peux l’utiliser, le modifier et le partager librement à des fins éducatives ou personnelles.
+
+⭐ Si ce projet t’a plu, pense à lui mettre une ⭐ sur GitHub et à le partager !
+Cela m’aide énormément 💙
