@@ -1,25 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import Sidebar from "./components/Sidebar";
 import Main from "./components/Main";
-import Top from "./components/Top";
-import { BrowserRouter as Router } from "react-router-dom";
-import "./App.css";
+import RightPanel from "./components/RightPanel";
 import "./style.css";
-import RecentUpdates from "./components/RecentUpdates";
-import SalesAnalytics from "./components/SalesAnalytics";
 
-function App() {
+const App = () => {
+  const [darkTheme, setDarkTheme] = useState(false);
+  const [sidebarVisible, setSidebarVisible] = useState(false);
+
+  const toggleTheme = () => setDarkTheme(!darkTheme);
+  const openSidebar = () => setSidebarVisible(true);
+  const closeSidebar = () => setSidebarVisible(false);
+
   return (
-    <div className="container">
-      <Sidebar />
+    <div className={`container ${darkTheme ? "dark-theme-variables" : ""}`}>
+      <Sidebar visible={sidebarVisible} onClose={closeSidebar} />
       <Main />
-      <div className="right">
-        <Top />
-        <RecentUpdates />
-        <SalesAnalytics />
-      </div>
+      <RightPanel
+        toggleTheme={toggleTheme}
+        openSidebar={openSidebar}
+        darkTheme={darkTheme}
+      />
     </div>
   );
-}
+};
 
 export default App;
