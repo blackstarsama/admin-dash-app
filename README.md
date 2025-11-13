@@ -68,6 +68,7 @@ Le projet sera disponible sur :
 
 #### 🧱 Structure du projet
 
+```bash
 📁 src/
  ┣ 📂 components/
  ┃ ┣ 📜 Sidebar.jsx
@@ -79,12 +80,14 @@ Le projet sera disponible sur :
  ┣ 📜 App.js
  ┣ 📜 index.js
  ┗ 📜 style.css
+```
 
 ### 🎨 Thèmes & Personnalisation
 
 Le thème est basé sur des variables CSS dynamiques.
 Tu peux modifier les couleurs globales dans le fichier :
 
+```bash
 :root {
   --color-primary: #7380ec;
   --color-success: #41f1b6;
@@ -98,6 +101,7 @@ Tu peux modifier les couleurs globales dans le fichier :
   --color-white: #202528;
   --color-dark: #edeffd;
 }
+```
 
 ## 🪪 Licence
 
