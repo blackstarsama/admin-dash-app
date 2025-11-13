@@ -1,14 +1,28 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { Orders } from "../Orders";
+
+const updates = [
+  {
+    img: "./images/photo1.jfif",
+    name: "Mike Tyson",
+    message: "received his order of Night lion tech GPS drone.",
+    time: "2 Minutes Ago",
+  },
+  {
+    img: "./images/photo2.jfif",
+    name: "Diana Ayi",
+    message: "declined her order of 2 DJI Air 25.",
+    time: "5 Minutes Ago",
+  },
+  {
+    img: "./images/photo3.jfif",
+    name: "Karen Hope",
+    message: "received her order of GPS 4K Drone.",
+    time: "8 Minutes Ago",
+  },
+];
 
 const RecentUpdates = () => {
-  const updates = useSelector((state) => state.updates); // Assuming updates is part of the Redux state
-
-  // Vérifiez si updates est un tableau
-  if (!Array.isArray(updates)) {
-    return <p>No updates available.</p>;
-  }
-
   return (
     <div className="recent-updates">
       <h2>Recent Updates</h2>
@@ -16,7 +30,7 @@ const RecentUpdates = () => {
         {updates.map((update, index) => (
           <div className="update" key={index}>
             <div className="profile-photo">
-              <img src={update.photo} alt="" />
+              <img src={update.img} alt={update.name} />
             </div>
             <div className="message">
               <p>

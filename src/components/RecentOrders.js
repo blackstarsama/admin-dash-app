@@ -1,20 +1,7 @@
-import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { fetchRecentOrders } from "../redux/actions/index";
+import React from "react";
+import { Orders } from "../Orders";
 
 const RecentOrders = () => {
-  const dispatch = useDispatch();
-  const recentOrders = useSelector((state) => state.orders.recentOrders);
-
-  useEffect(() => {
-    dispatch(fetchRecentOrders());
-  }, [dispatch]);
-
-  // Vérifiez si recentOrders est un tableau
-  if (!Array.isArray(recentOrders)) {
-    return <p>No recent orders available.</p>;
-  }
-
   return (
     <div className="recent-orders">
       <h2>Recent Orders</h2>
@@ -25,19 +12,27 @@ const RecentOrders = () => {
             <th>Product Number</th>
             <th>Payments</th>
             <th>Status</th>
+            <th>Details</th>
           </tr>
         </thead>
         <tbody>
-          {recentOrders.map((order) => (
-            <tr key={order.id}>
+          {Orders.map((order, index) => (
+            <tr key={index}>
               <td>{order.productName}</td>
               <td>{order.productNumber}</td>
-              <td>{order.payments}</td>
+              <td>{order.paymentStatus}</td>
               <td
-                className={order.status === "Pending" ? "warning" : "primary"}
+                className={
+                  order.shipping.toLowerCase() === "declined"
+                    ? "danger"
+                    : order.shipping.toLowerCase() === "pending"
+                    ? "warning"
+                    : "primary"
+                }
               >
-                {order.status}
+                {order.shipping}
               </td>
+              <td className="primary">Details</td>
             </tr>
           ))}
         </tbody>
